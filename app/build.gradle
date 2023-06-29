@@ -3,8 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
-
-
+apply plugin: 'maven-publish'
 android {
     compileSdk 32
 
@@ -71,7 +70,7 @@ publishing {
             groupId 'com.kingapp.importproyectlibrary'
             //You can either define these here or get them from project conf elsewhere
             artifactId 'importproyectlibraryproyect'
-            version '1.2.0'
+            version '1.3.0'
             artifact "$buildDir/outputs/aar/commons.aar" //aar artifact you want to publish
 
             //generate pom nodes for dependencies
