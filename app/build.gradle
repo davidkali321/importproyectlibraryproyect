@@ -69,7 +69,7 @@ publishing {
             groupId 'com.kingapp.importproyectlibrary'
             //You can either define these here or get them from project conf elsewhere
             artifactId 'importproyectlibraryproyect'
-            version '1.5.0'
+            version '1.7.0'
             artifact "$buildDir/outputs/aar/commons.aar" //aar artifact you want to publish
             //generate pom nodes for dependencies
             pom.withXml {
@@ -89,7 +89,7 @@ publishing {
             // You can then customize attributes of the publication as shown below.
             groupId 'com.kingapp.importproyectlibrary'
             artifactId 'importproyectlibraryproyect'
-            version '1.6.0'
+            version '1.7.0'
             artifact "$buildDir/outputs/aar/commons.aar" //aar artifact you want to publish
             //generate pom nodes for dependencies
             pom.withXml {
