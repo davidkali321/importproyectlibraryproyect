@@ -90,7 +90,7 @@ publishing {
             // You can then customize attributes of the publication as shown below.
             groupId 'com.kingapp.importproyectlibrary'
             artifactId 'importproyectlibraryproyect'
-            version '1.5.0'
+            version '1.6.0'
             artifact "$buildDir/outputs/aar/commons.aar" //aar artifact you want to publish
             //generate pom nodes for dependencies
             pom.withXml {
@@ -107,11 +107,10 @@ publishing {
         }
     }
     repositories{
-        maven {
-            url "$buildDir/repo"
-        }
+        maven { url 'https://jitpack.io' }
     }
 }
+
 /*publishing {
     publications {
         release(MavenPublication) {
